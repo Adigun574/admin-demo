@@ -1,0 +1,32 @@
+<!--<h1 id = "heading">Mercator</h1>
+<div class="container">
+  <ul class="navlist">
+    <a routerLink='/admin'><li id="child1"><button>Admin</button></li></a>
+    <a routerLink='/companies'><li id="child2"><button>Companies</button></li></a>
+    <a routerLink='/helpdesk'><li id="child3"><button>Help Desk</button></li></a>
+  </ul>
+</div>-->
+
+<div class="details">
+  <h5>Name</h5>
+  <h3 class="value">{{companyDetail.name}}</h3>
+  <h5>Email</h5>
+  <h3 class="value">{{companyDetail.email}}</h3>
+  <h5>Phone Number</h5>
+  <h3 class="value">{{companyDetail.phoneNo}}</h3>
+
+  <h5 *ngIf='companyDetail.locations.code'>Locations:{{companyDetail.locations[0].code}}
+    <ul>
+      <li *ngFor="let location of companyDetail.locations;index as i">{{i+1}}{{companyDetail.locations[i].name}}</li>
+    </ul>
+  </h5>
+  <h5>Users</h5>
+  <div *ngFor="let user of users; index as i">
+    <h3 class="value">Name:{{user.company.name}}</h3>
+    <h3 class="value" *ngIf="user.role">User Role:{{user.role}}</h3>
+  </div>
+  <h5>Id</h5>
+  <h3 class="value">{{companyDetail.id}}</h3>
+</div>
+
+<button class="btn btn-danger" (click)="logOut()">Log Out</button>

@@ -1,0 +1,35 @@
+<!--<h1 id = "heading">Mercator</h1>
+<div class="container">
+  <ul class="navlist">
+    <a routerLink='/admin'><li id="child1"><button>Admin</button></li></a>
+    <a routerLink='/companies'><li id="child2"><button>Companies</button></li></a>
+    <a routerLink='/helpdesk'><li id="child3"><button>Help Desk</button></li></a>
+  </ul>
+</div>-->
+
+<app-searchcompany></app-searchcompany>
+
+<h3>Companies</h3>
+<table class="table table-stripped table-condensed table-responsive table-bordered">
+  
+  
+  <tr>
+    <th>Name</th>
+    <th>Id</th>
+    <th>Email</th>
+    <th>Phone No.</th>
+    <th>-</th>
+  </tr>
+  <tr *ngFor="let company of companies">
+    <td>{{company.name}}</td>
+    <td>{{company.id}}</td>
+    <td>{{company.email}}</td>
+    <td>{{company.phoneNo}}</td>
+    <td><button class="view btn btn-primary"(click)="viewCompanyDetail(company.id)">View Details</button></td>
+    <td><button class="disable btn btn-warning" disabled>Disable Company</button></td>
+  </tr>
+
+</table>
+
+<button class="btn btn-danger" (click)="logOut()">Log Out</button>
+

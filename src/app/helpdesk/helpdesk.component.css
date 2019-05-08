@@ -1,0 +1,23 @@
+#heading{
+  color:white;
+  background-color:steelblue;
+  text-align:center;
+  padding:10px
+}
+
+.navlist li{
+  list-style-type:none;
+  display:inline;
+  padding:20px;
+}
+.navlist li button{
+  border:none;
+  color:steelblue;
+  border-radius:10px;
+  padding:15px;
+  box-shadow: 3px 3px 3px black
+}
+.navlist{
+  display:flex;
+  justify-content:center
+}

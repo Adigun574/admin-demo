@@ -1,0 +1,45 @@
+#heading{
+  color:white;
+  background-color:steelblue;
+  text-align:center;
+  padding:10px
+}
+
+.navlist li{
+  list-style-type:none;
+  display:inline;
+  padding:20px;
+}
+.navlist li button{
+  border:none;
+  color:steelblue;
+  border-radius:10px;
+  padding:15px;
+  box-shadow: 3px 3px 3px black
+}
+.navlist{
+  display:flex;
+  justify-content:center
+}
+.companies,.locations,.transactions{
+  background-color:rgb(100, 214, 100);
+  height:150px;
+  padding:30px;
+  width:70vw;
+  margin:50px auto 50px auto;
+  text-align:center;
+  color:white;
+  border-radius:5px
+}
+details{
+  display:flex;
+  justify-content: center
+}
+.value{
+  color:rgb(100, 214, 100);
+  background-color:white;
+  width:50px;
+  border-radius:5px;
+  text-align:center;
+  margin:auto
+}

@@ -1,0 +1,32 @@
+<!--<h1 id = "heading">Mercator</h1>
+<div class="container">
+  <ul class="navlist">
+    <a routerLink='/admin'><li id="child1"><button>Admin</button></li></a>
+    <a routerLink='/companies'><li id="child2"><button>Companies</button></li></a>
+    <a routerLink='/helpdesk'><li id="child3"><button>Help Desk</button></li></a>
+  </ul>
+</div>-->
+
+<div class="details">
+    <div class="companies">
+        <h4>Number of companies registered on simplify</h4>
+        <h2 class="value">{{numberOfCompanies}}</h2>
+    </div>
+
+    <div class="locations">
+            <h4>Number of company locations</h4>
+            <h2 class="value">{{numberOfLocations}}</h2>
+    </div>
+
+    <!--<div class="transactions">
+            <h4>Number of transactions for today</h4>
+            <h2 class="value">--</h2>
+    </div>-->
+    
+</div>
+
+<button class="btn btn-danger" (click)="logOut()">Log Out</button>
+
+
+
+<router-outlet></router-outlet>

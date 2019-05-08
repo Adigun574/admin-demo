@@ -1,0 +1,18 @@
+<!--<input #searchBox (input)="search(searchBox.value)"type="text">
+<ul>
+  <li *ngFor="let company of companies | filter : searchBox.value">
+    <a routerLink="companydetails/{{company.id}}">{{company.name}}</a>
+  </li>-->
+  <!--<li *ngFor="let company of companies | filter : 'ro'">
+    {{company.name}}
+  </li>
+  
+</ul>-->
+
+<input #searchBox [(ngModel)]="searchText" (input)="test(searchBox.value)"type="text" id="searchbox" placeholder="Search by company name">
+
+<ul>
+  <li *ngFor="let company of filteredCompanies">
+    <a routerLink="companydetails/{{company.id}}">{{company.name}}</a>
+  </li>
+  

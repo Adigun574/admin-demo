@@ -1,0 +1,12 @@
+#heading{
+  color:white;
+  background-color:steelblue;
+  text-align:center;
+  padding:10px
+}
+.form-group{
+  width:80vw
+}
+.errormessage{
+  color:red
+}
